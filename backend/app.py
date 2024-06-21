@@ -11,7 +11,7 @@ from bs4 import BeautifulSoup
 genai.configure(api_key= os.getenv('GOOGLE_API_KEY'))
 
 app = Flask(__name__)
-CORS(app, origins=["http://localhost:5173", "https://brieftube-1.onrender.com"])
+CORS(app, origins=["http://localhost:5173", "https://brieftube.vercel.app"])
 
 def get_youtube_transcription(video_link):
     # Extract video ID from the YouTube video link
