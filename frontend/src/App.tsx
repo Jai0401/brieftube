@@ -11,7 +11,7 @@ function App() {
   const handleSubmit = () => {
     console.log(url);
     setLoading(true);
-    axios.post('https://brieftube-1.onrender.com/get_summary', {youtube_link: url})
+    axios.post('https://brieftube-2.onrender.com/get_summary', {youtube_link: url})
     .then(res => {
       console.log(res.data);
       setSummary(res.data.summary);
