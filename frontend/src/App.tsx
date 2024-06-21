@@ -29,7 +29,7 @@ function App() {
       <h1 className='text-center text-2xl'>BriefTube</h1>
       <p className='text-center text-lg p-4'>YouTube video summariser</p>
       <div className='flex justify-center p-4'>
-      <input type="text" value={url} placeholder="Paste a YouTube URL" onChange={(e)=>setUrl(e.target.value)}
+      <input type="text" value={url} placeholder="https://www.youtube.com/..." onChange={(e)=>setUrl(e.target.value)}
       className='w-96 h-10 mr-2 border-black border-2 align-middle rounded-md px-2'/>
       <button onClick={handleSubmit} className="border-black border-2 p-2 h-10 rounded-md hover:text-white hover:bg-black">Submit</button>
       </div>
