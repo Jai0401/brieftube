@@ -30,10 +30,11 @@ function App() {
       <p className='text-center text-lg p-4'>YouTube video summariser</p>
       <div className='flex justify-center p-4'>
       <input type="text" value={url} placeholder="Paste a YouTube URL" onChange={(e)=>setUrl(e.target.value)}
-      className='w-96 h-10 mr-2 border-black border-2 align-middle rounded-md'/>
+      className='w-96 h-10 mr-2 border-black border-2 align-middle rounded-md px-2'/>
       <button onClick={handleSubmit} className="border-black border-2 p-2 h-10 rounded-md hover:text-white hover:bg-black">Submit</button>
       </div>
-      {loading ?<><br/>Loading...</> : summary ? (
+      {loading ?
+      <div className='text-center text-lg p-4'>Loading...</div> : summary ? (
         <div className='flex justify-center'>
         <div className='pt-8 w-3/4'>
           <h1 className='text-xl font-bold'>{title}</h1>
