@@ -59,6 +59,9 @@ Transcription Text:
 Based on the provided transcription, create a comprehensive summary of the video content in a paragraph format:
 
 """
+@app.get('/api/ping')
+async def ping():
+    return {'message': 'pong'}
 
 @app.route('/get_summary', methods=['POST'])
 def process_youtube_link():
